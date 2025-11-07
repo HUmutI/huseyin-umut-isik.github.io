@@ -106,16 +106,24 @@ footer {
 }
 
 /* 🕹️ Hidden mini-game zone */
-#secret-zone {
+/* 🕹️ Floating robot easter egg */
+#secret-bot {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
-  font-size: 20px;
+  bottom: 30px;
+  right: 30px;
+  font-size: 28px;
   cursor: pointer;
-  opacity: 0.1;
-  transition: 0.5s;
+  opacity: 0.15;
+  animation: floaty 8s ease-in-out infinite alternate;
+  transition: opacity 0.3s;
 }
 
-#secret-zone:hover {
+#secret-bot:hover {
   opacity: 1;
+  transform: scale(1.2);
+}
+
+@keyframes floaty {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
 }
