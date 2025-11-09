@@ -128,17 +128,14 @@ body{
 #secret-bot:active{transform:scale(.96)}
 
 /* Mobile */
-.mobile-only {
-  display: none;
-}
 
 /* Mobil menü varsayılan olarak gizli */
 .mobile-nav {
-  display: none; /* ✅ Eskiden flex’ti */
+  display: none; /* Varsayılan olarak gizli */
   flex-direction: column;
   padding: 12px;
   background: var(--surface);
-  border-top: 1px solid rgba(255,255,255,0.02);
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
 }
 
 .mobile-nav a {
@@ -148,7 +145,7 @@ body{
 }
 
 /* Sadece mobilde görünür hale getir */
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
   .mobile-only {
     display: inline-flex;
   }
@@ -159,7 +156,14 @@ body{
     display: none !important;
   }
   .mobile-nav:not([hidden]) {
-    display: flex; /* ✅ Menü butonuna tıklanınca görünür olur */
+    display: flex; /* Menü butonuna tıklanınca görünür olur */
+  }
+}
+
+/* Masaüstünde mobil menüyü tamamen gizle */
+@media (min-width: 1001px) {
+  .mobile-nav {
+    display: none !important;
   }
 }
 
