@@ -29,8 +29,10 @@ body {
 header {
   text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #0b0c10, #1f2833);
+  background: linear-gradient(135deg, var(--bg-color), var(--card-bg));
+  transition: background 0.3s;
 }
+
 
 .profile-img {
   width: 120px;
