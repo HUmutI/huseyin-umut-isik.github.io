@@ -64,10 +64,10 @@ body{
 .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;font-weight:600}
 .btn.outline{border:1px solid rgba(255,255,255,0.06)}
 
-/* Mobile */
+/* Mobile 
 .mobile-only{display:none}
 .mobile-nav{display:flex;flex-direction:column;padding:12px;background:var(--surface);border-top:1px solid rgba(255,255,255,0.02)}
-.mobile-nav a{padding:8px 0;color:var(--muted);text-decoration:none}
+.mobile-nav a{padding:8px 0;color:var(--muted);text-decoration:none}*/
 
 /* Hero */
 .hero{padding:48px 0}
@@ -126,6 +126,44 @@ body{
 /* Secret bot */
 #secret-bot{position:fixed;right:18px;bottom:18px;padding:10px;border-radius:14px;background:var(--glass);backdrop-filter: blur(6px);cursor:pointer;transition:transform .18s}
 #secret-bot:active{transform:scale(.96)}
+
+/* Mobile */
+.mobile-only {
+  display: none;
+}
+
+/* Mobil menü varsayılan olarak gizli */
+.mobile-nav {
+  display: none; /* ✅ Eskiden flex’ti */
+  flex-direction: column;
+  padding: 12px;
+  background: var(--surface);
+  border-top: 1px solid rgba(255,255,255,0.02);
+}
+
+.mobile-nav a {
+  padding: 8px 0;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+/* Sadece mobilde görünür hale getir */
+@media (max-width:1000px) {
+  .mobile-only {
+    display: inline-flex;
+  }
+  .nav {
+    display: none;
+  }
+  .mobile-nav[hidden] {
+    display: none !important;
+  }
+  .mobile-nav:not([hidden]) {
+    display: flex; /* ✅ Menü butonuna tıklanınca görünür olur */
+  }
+}
+
+
 
 /* Responsive */
 @media (max-width:1000px){
