@@ -1,54 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0CKE5CVYF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-S0CKE5CVYF');
   </script>
-  
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Hüseyin Umut Işık</title>
+  <title>Hüseyin Umut Işık | Quantum & AI Engineer</title>
 
   <!-- Modern fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
 
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="style.css" />
 
   <!-- Social/meta -->
-  <meta name="description" content="Hüseyin Umut Işık — Computer Engineering student at METU. Researcher in robotics and event-based vision" />
+  <meta name="description"
+    content="Hüseyin Umut Işık — Focus on Quantum Computing, Deep Learning, and AI. First place at EPFL Quantum Hackathon and MIT iQuHACK honoree." />
 </head>
+
 <body>
+  <div class="bg-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/">Hüseyin Umut Işık</a>
-  
+      <a class="brand" href="/">H. Umut Işık <span class="brand-dot">.</span></a>
+
       <nav class="nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#projects">Awards & Projects</a>
         <a href="#contact">Contact</a>
       </nav>
-  
+
       <div class="header-actions">
-        <button id="theme-toggle" class="btn icon-btn" aria-pressed="false" title="Toggle theme">🌙</button>
-        <button id="menu-toggle" class="btn icon-btn mobile-only" aria-expanded="false" aria-controls="mobile-nav">☰</button>
+        <button id="theme-toggle" class="btn icon-btn" aria-pressed="false" title="Toggle theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" class="moon-icon">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" class="sun-icon" style="display:none">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button id="menu-toggle" class="btn icon-btn mobile-only" aria-expanded="false" aria-controls="mobile-nav">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
       </div>
     </div>
-  
+
     <!-- Mobile nav -->
     <div id="mobile-nav" class="mobile-nav" hidden>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
+      <a href="#projects">Awards & Projects</a>
       <a href="#contact">Contact</a>
     </div>
   </header>
@@ -57,151 +89,288 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-left">
-          <h1 class="hero-title">Hi — I'm Umut</h1>
-          <p class="hero-sub">Computer Engineering Student at METU • Robotics + Computer Vision enthusiast</p>
+          <div class="status-badge">
+            <span class="pulse-dot"></span> Focusing on Quantum Computing & AI
+          </div>
+          <h1 class="hero-title">Hüseyin Umut <br><span class="gradient-text">Işık</span></h1>
+          <p class="hero-sub">Computer Engineering Student at METU specializing in Quantum Computing, Deep Learning, and
+            AI. Building intelligent systems at the intersection of advanced research and robust engineering.</p>
 
-          <p class="cta-line">
-            <a class="btn primary" href="#projects">See Projects</a>
-            <a class="btn outline" href="https://github.com/HUmutI" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn outline" href="https://www.linkedin.com/in/h%C3%BCseyin-umut-i%C5%9F%C4%B1k-7b3ba4255/" target="_blank" rel="noopener">LinkedIn</a>
-          </p>
-
-          <ul class="meta-list">
-            <li><strong>Role:</strong> Candidate Software Engineer @ MKE</li>
-            <li><strong>Research:</strong> METU ROMER — Event-based vision & depth estimation</li>
-            <li><strong>Interests:</strong> SLAM, Autonomous Systems, AI/ML</li>
-          </ul>
+          <div class="cta-line">
+            <a class="btn primary" href="#projects">Explore My Work</a>
+            <a class="btn outline social-btn" href="https://github.com/HUmutI" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+              GitHub
+            </a>
+            <a class="btn outline social-btn"
+              href="https://www.linkedin.com/in/h%C3%BCseyin-umut-i%C5%9F%C4%B1k-7b3ba4255/" target="_blank"
+              rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
         </div>
 
         <div class="hero-right">
-          <div class="card profile-card">
+          <div class="profile-wrapper">
+            <div class="profile-glow"></div>
             <div class="avatar-photo">
               <img src="images/umut_first.jpeg" alt="Hüseyin Umut Işık profile photo">
             </div>
-            <div class="profile-info">
-              <h3>Hüseyin Umut Işık</h3>
-              <p>Computer Engineering — METU</p>
-
-              <div class="socials">
-                <a href="https://github.com/HUmutI" target="_blank" rel="noopener" title="GitHub">🐙</a>
-                <a href="https://www.linkedin.com/in/h%C3%BCseyin-umut-i%C5%9F%C4%B1k-7b3ba4255/" target="_blank" rel="noopener" title="LinkedIn">🔗</a>
-              </div>
-            </div>
+            <div class="floating-badge badge-1">Quantum AI</div>
+            <div class="floating-badge badge-2">Deep Learning</div>
           </div>
+        </div>
+      </div>
 
-          <div class="card stats-grid">
-            <div>
-              <span class="stat">10+</span>
-              <small>Projects</small>
-            </div>
-            <div>
-              <span class="stat">3</span>
-              <small>First-place awards</small>
-            </div>
-            <div>
-              <span class="stat">2024–2025</span>
-              <small>Active research</small>
-            </div>
+      <div class="container hero-stats-container">
+        <div class="stats-grid glass-card">
+          <div class="stat-item">
+            <span class="stat-value">5+</span>
+            <span class="stat-label">Global Hackathon Awards</span>
+          </div>
+          <div class="stat-item divider"></div>
+          <div class="stat-item">
+            <span class="stat-value">2026</span>
+            <span class="stat-label">EPFL Quantum 1st Place</span>
+          </div>
+          <div class="stat-item divider"></div>
+          <div class="stat-item">
+            <span class="stat-value">MIT</span>
+            <span class="stat-label">iQuHACK Honorable Mention</span>
           </div>
         </div>
       </div>
     </section>
 
     <section id="about" class="container section">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-grid">
-        <div>
-          <p>I'm a Computer Engineering student at METU, focused on robotics, computer vision and quantum-inspired algorithms. I work on event-based vision, depth estimation, UAV autonomy and optimization of modern detection models.</p>
-          <p>I enjoy building systems that combine research and engineering: from simulations in Gazebo/Webots to model optimization with TensorRT/ONNX.</p>
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text glass-card">
+          <p>As a Computer Engineering student at METU, my passion lies at the bleeding edge of technology:
+            <strong>Quantum Computing and Deep Learning</strong>. I specialize in developing hybrid architectures that
+            merge high-performance computing with cutting-edge AI methodologies.
+          </p>
+          <p>My recent focus has been on exploiting quantum-inspired algorithms and true quantum hardware to tackle
+            complex optimization and prediction problems—such as mapping non-linear market dynamics into purely Photonic
+            Quantum Reservoirs or addressing the structural complexities of the LABS problem. I thrive in highly
+            competitive environments, consistently bringing ideas from conceptual theory to award-winning execution
+            within 24-48 hours alongside elite global talent.</p>
         </div>
-        <div class="skills-quick">
-          <p><strong>Current:</strong> Candidate Software Engineer @ MKE — Augmented Reality implementation on UGVs</p>
-          <p><strong>Research:</strong> METU ROMER — Event-Based vision, Monocular Depth Estimation</p>
-          <p><strong>UAV:</strong> METU ANZU UAV— Autonomy, Path Planning, Object Detection & Tracking</p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon">🤖</div>
+            <div>
+              <h4 class="highlight-title">Deep Learning & AI</h4>
+              <p class="highlight-desc">Advanced model architectures, transfer learning, and generative AI integrations.
+              </p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">⚛️</div>
+            <div>
+              <h4 class="highlight-title">Quantum Computing</h4>
+              <p class="highlight-desc">Photonic quantum reservoirs, VQC, and hybrid quantum-classical optimization.</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">⚡</div>
+            <div>
+              <h4 class="highlight-title">Robotics & Vision</h4>
+              <p class="highlight-desc">Event-based vision, depth estimation, and UAV autonomy at METU ROMER & ANZU.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="experience" class="container section">
-      <h2 class="section-title">Research & Experience</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Candidate Software Engineer — MKE</h3>
-          <time>2025–Present</time>
-          <p>Working on Augmented Reality implementation on UGVs.</p>
-        </article>
+      <div class="section-header">
+        <h2 class="section-title">Research & Experience</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item glass-card">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 – Present</span>
+            <h3 class="timeline-role">Candidate Software Engineer</h3>
+            <h4 class="timeline-org">MKE</h4>
+            <p>Pioneering Augmented Reality implementations on Unmanned Ground Vehicles (UGVs) to enhance situational
+              awareness and operational capabilities.</p>
+          </div>
+        </div>
 
-        <article class="card">
-          <h3>Undergraduate Researcher — METU ROMER</h3>
-          <time>2024–Present</time>
-          <p>Event-based vision, depth estimation, and lunar environment simulation for robotic perception.</p>
-        </article>
+        <div class="timeline-item glass-card">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 – Present</span>
+            <h3 class="timeline-role">Undergraduate Researcher</h3>
+            <h4 class="timeline-org">METU ROMER</h4>
+            <p>Conducting advanced research on Event-Based Vision and Monocular Depth Estimation. Developing simulation
+              environments for complex robotic perception scenarios including lunar applications.</p>
+          </div>
+        </div>
 
-        <article class="card">
-          <h3>Software Team — METU ANZU UAV</h3>
-          <time>2024–Present</time>
-          <p>UAV autonomy: path planning, object detection, and tracking algorithms.</p>
-        </article>
+        <div class="timeline-item glass-card">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 – Present</span>
+            <h3 class="timeline-role">Software Team Member</h3>
+            <h4 class="timeline-org">METU ANZU UAV</h4>
+            <p>Engineering autonomous UAV systems encompassing complex path planning, real-time object detection, and
+              robust tracking algorithms.</p>
+          </div>
+        </div>
 
-        <article class="card">
-          <h3>R&D Intern — HIDROAN</h3>
-          <time>2025</time>
-          <p>Model optimization: RFDETR object detection models with TensorRT & ONNX & PyTorch for embedded deployment.</p>
-        </article>
+        <div class="timeline-item glass-card">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025</span>
+            <h3 class="timeline-role">R&D Intern</h3>
+            <h4 class="timeline-org">HIDROAN</h4>
+            <p>Focused on AI model optimization. Deployed RFDETR object detection models utilizing TensorRT, ONNX, and
+              PyTorch for highly efficient embedded edge deployment.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="projects" class="container section">
-    
-      <h2 class="section-title">Projects & Awards</h2>
-      <div class="projects-grid">
+      <div class="section-header">
+        <h2 class="section-title">Awards & Featured Projects</h2>
+        <div class="section-line"></div>
+      </div>
 
-        <div class="project-card">
-          <h4>IQM QuantumHACK - Banco Santander Challenge</h4>
-          <p>1st Place — Worked on IQM Quantum Computers and developed a VQC model for risky investments. 24 hours Hackathon in Madrid, Spain.</p>
+      <div class="featured-projects">
+        <!-- EPFL 2026 -->
+        <div class="project-featured glass-card highlight-card">
+          <div class="project-award-badge gold">🏆 1st Place Global</div>
+          <div class="project-content">
+            <h3>EPFL Quantum Hackathon 2026 <span class="tag">Quandela Challenge</span></h3>
+            <p class="project-team"><strong>Team Qedi</strong>: Eren Aslan, Arda Kara, Mehmet Alp Özaydın, H. Umut Işık
+            </p>
+            <p class="project-desc">Tackled the highly competitive Quandela Challenge with our project, <strong>"Hybrid
+                Photonic Temporal QRC (HPT-QRC)"</strong>. We mapped non-linear market dynamics directly into a purely
+              Photonic Quantum Reservoir powered by MerLin to forecast Swaption Volatility Surfaces.</p>
+            <p class="project-impact">Successfully outperformed classical deep learning baselines (like LSTM) by
+              physically simulating temporal memory with significantly fewer parameters.</p>
+            <div class="project-links">
+              <a href="https://lnkd.in/dhS425hH" target="_blank" rel="noopener" class="btn outline small">View Code</a>
+              <a href="https://lnkd.in/dPZhyzq8" target="_blank" rel="noopener" class="btn outline small">Live
+                Project</a>
+            </div>
+          </div>
         </div>
 
-        <div class="project-card">
-          <h4>TEKNOFEST — QNN face recognition</h4>
-          <p>1st Place — Applied QNNs for low-quality face recognition (quantum technologies category). 30 hours Hackathon in İstanbul, Turkey.</p>
+        <!-- MIT iQuHACK 2026 -->
+        <div class="project-featured glass-card highlight-card">
+          <div class="project-award-badge silver">🏆 Honorable Mention</div>
+          <div class="project-content">
+            <h3>MIT iQuHACK 2026 <span class="tag">NVIDIA Challenge</span></h3>
+            <p class="project-team"><strong>Team QAT</strong>: Hatice Boyar, Eren Aslan, İlayda Dilek, Jen-Yu Chang
+              (Leo), H. Umut Işık</p>
+            <p class="project-desc">Competed among 1,400+ participants globally. Our project, <strong>"Hybrid GQE-MTS
+                and Transfer Learning for LABS Problem"</strong>, addressed the Low Autocorrelation Binary Sequences
+              (LABS) challenge.</p>
+            <p class="project-impact">Developed a hybrid architecture integrating Generative AI with High-Performance
+              Computing (HPC) to massively accelerate complex optimization tasks.</p>
+            <div class="project-links">
+              <a href="https://lnkd.in/dVknEVXT" target="_blank" rel="noopener" class="btn outline small">View Code</a>
+              <a href="https://lnkd.in/dcc27SQM" target="_blank" rel="noopener" class="btn outline small">Live
+                Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-grid mt-8">
+        <div class="project-card glass-card">
+          <div class="card-header">
+            <span class="card-icon">🇪🇸</span>
+            <span class="card-award">1st Place</span>
+          </div>
+          <h4>IQM QuantumHACK <br><span class="text-sm fw-normal muted">Banco Santander Challenge</span></h4>
+          <p>Developed a VQC model for risky investments utilizing true IQM Quantum Computers during a 24-hour hackathon
+            in Madrid, Spain.</p>
         </div>
 
-        <div class="project-card">
-          <h4>TÜBİTAK 2204-A — Cryptography</h4>
-          <p>1st Place (Izmir Regional) — Cryptography algorithm / mathematics project.</p>
+        <div class="project-card glass-card">
+          <div class="card-header">
+            <span class="card-icon">🇹🇷</span>
+            <span class="card-award">1st Place</span>
+          </div>
+          <h4>TEKNOFEST <br><span class="text-sm fw-normal muted">Quantum Technologies</span></h4>
+          <p>Applied QNNs for low-quality face recognition in a rigorous 30-hour hackathon in Istanbul.</p>
         </div>
 
-        <div class="project-card">
+        <div class="project-card glass-card">
+          <div class="card-header">
+            <span class="card-icon">💡</span>
+            <span class="card-award">1st Place (Reg.)</span>
+          </div>
+          <h4>TÜBİTAK 2204-A <br><span class="text-sm fw-normal muted">Cryptography</span></h4>
+          <p>First place in the Izmir Regional finals for an advanced cryptography algorithms and mathematics project.
+          </p>
+        </div>
+
+        <div class="project-card glass-card">
+          <div class="card-header">
+            <span class="card-icon">🏭</span>
+            <span class="card-award">2nd Place</span>
+          </div>
           <h4>METU-DTX Hackathon</h4>
-          <p>2nd Place — Industrial defect classification model. 6 hours Hackathon in Ankara, Turkey</p>
+          <p>Built a robust industrial defect classification model from scratch in just 6 hours.</p>
         </div>
-        <div class="project-card">
+
+        <div class="project-card glass-card">
+          <div class="card-header">
+            <span class="card-icon">🛡️</span>
+            <span class="card-award">2nd Place</span>
+          </div>
           <h4>BTK Academy CTF</h4>
-          <p>2nd Place — Web-App security, kernel based vulnerabilities. 4 days long CTF Camp.</p>
+          <p>Secured 2nd place in a 4-day intensive CTF camp focusing on Web-App security and kernel vulnerabilities.
+          </p>
         </div>
       </div>
     </section>
 
     <section id="hobbies" class="container section">
-      <h2 class="section-title">Hobbies & Interests</h2>
+      <div class="section-header">
+        <h2 class="section-title">Beyond the Screen</h2>
+        <div class="section-line"></div>
+      </div>
       <div class="hobbies-grid">
-        <div class="hobby-card">🎨 Drawing </div>
-        <div class="hobby-card">🏀 Basketball </div>
-        <div class="hobby-card">🧩 Solving Rubik’s Cubes</div>
-        <div class="hobby-card">🏃 Running </div>
+        <div class="hobby-card glass-card">🎨 Drawing </div>
+        <div class="hobby-card glass-card">🏀 Basketball </div>
+        <div class="hobby-card glass-card">🧩 Rubik’s Cubes</div>
+        <div class="hobby-card glass-card">🏃 Running </div>
       </div>
     </section>
 
-
-    <section id="contact" class="container section contact-section">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <p> You can text me on LinkedIn, glad to help you.</p>
-
-          <p>🔗 <a href="https://www.linkedin.com/in/h%C3%BCseyin-umut-i%C5%9F%C4%B1k-7b3ba4255/" target="_blank" rel="noopener">LinkedIn</a></p>
-          <p>🐙 <a href="https://github.com/HUmutI" target="_blank" rel="noopener">GitHub</a></p>
-
+    <section id="contact" class="container section">
+      <div class="cta-box glass-card">
+        <h2>Let's build the future.</h2>
+        <p>I am always open to discussing cutting-edge research, collaborating on hackathons, or exploring deep tech
+          opportunities in Quantum AI.</p>
+        <div class="contact-actions">
+          <a class="btn primary large" href="https://www.linkedin.com/in/h%C3%BCseyin-umut-i%C5%9F%C4%B1k-7b3ba4255/"
+            target="_blank" rel="noopener">Connect on LinkedIn</a>
+          <a class="btn outline large" href="https://github.com/HUmutI" target="_blank" rel="noopener">Explore my
+            GitHub</a>
         </div>
       </div>
     </section>
@@ -209,19 +378,16 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2025 AI helped a lot, ngl.</p>
+      <div class="footer-brand">H. Umut Işık</div>
+      <p class="footer-copy">© 2026 Exploring the intersection of Intelligence and Quantum Mechanics.</p>
       <div class="footer-links">
-        <a href="#top">Back to top</a>
+        <a href="#top">Back to top ↑</a>
       </div>
     </div>
   </footer>
 
-  <!-- Hidden/optional playful robot preserved -->
-  <div id="secret-bot" aria-hidden="true" title="Secret robot">🤖</div>
-
   <script src="script.js"></script>
-  <script type="module"
-  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-  </script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </body>
+
 </html>
