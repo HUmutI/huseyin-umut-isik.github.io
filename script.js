@@ -10,7 +10,7 @@
 
   function starColor() {
     const dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    return dark ? '210, 220, 255' : '40, 50, 90';
+    return dark ? '255, 235, 190' : '150, 90, 40';
   }
 
   function resize() {
@@ -88,8 +88,8 @@
 // ---------------------------------------------------------------------------
 (function () {
   console.log(
-    '%cThere is a door on this page.\nA star by the copyright opens it. Old gamers know another knock.',
-    'color:#8ab4f8;font-family:monospace'
+    '%cThese aren\'t the droids you\'re looking for.\n\nThere is a door on this page. A star by the copyright opens it.\nOld gamers know another knock. So does the Force.',
+    'color:#dcb84e;font-family:monospace'
   );
 
   const C = 'EBQ PRDN ZIZMYD.';
@@ -174,6 +174,8 @@
       '</div>';
     document.body.appendChild(overlay);
 
+    line('a long time ago in a galaxy far, far away...', 'term-far');
+    line('');
     line('> signal detected. an encrypted transmission:');
     line('> ' + C);
     line('> it asks for a key. the key watches the Moon.');
@@ -238,7 +240,17 @@
     if (pos === seq.length) { pos = 0; openTerminal(); }
   });
 
-  // Knock 2: three taps on the portrait.
+  // Knock 2: the Force. Type the famous blessing anywhere on the page.
+  let typed = '';
+  document.addEventListener('keydown', (e) => {
+    if (overlay || e.key.length !== 1) return;
+    if (/[a-z]/i.test(e.key)) {
+      typed = (typed + e.key.toLowerCase()).slice(-24);
+      if (typed.endsWith('maytheforcebewithyou')) openTerminal();
+    }
+  });
+
+  // Knock 3: three taps on the portrait.
   const portrait = document.querySelector('.portrait');
   if (portrait) {
     let taps = 0;
@@ -251,7 +263,7 @@
     });
   }
 
-  // Knock 3: the star in the footer.
+  // Knock 4: the star in the footer.
   const door = document.getElementById('door');
   if (door) {
     door.addEventListener('click', (e) => {
