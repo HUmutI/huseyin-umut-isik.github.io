@@ -13,418 +13,205 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Hüseyin Umut Işık | Quantum & AI Engineer</title>
+  <title>Hüseyin Umut Işık</title>
 
-  <!-- Modern fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-
-  <!-- Main stylesheet -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Social/meta -->
   <meta name="description"
-    content="Hüseyin Umut Işık — Focus on Quantum Computing, Deep Learning, and AI. First place at EPFL Quantum Hackathon and MIT iQuHACK honoree." />
+    content="Hüseyin Umut Işık, CS student at METU and research intern at the Computational Radiology Laboratory, Boston Children's Hospital / Harvard Medical School. Computer vision and deep learning." />
 </head>
 
 <body>
-  <div class="bg-shapes">
-    <div class="shape shape-1"></div>
-    <div class="shape shape-2"></div>
-    <div class="shape shape-3"></div>
-  </div>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <main class="page">
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="/">H. Umut Işık <span class="brand-dot">.</span></a>
-
-      <nav class="nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Awards & Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <div class="header-actions">
-        <button id="theme-toggle" class="btn icon-btn" aria-pressed="false" title="Toggle theme">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" class="moon-icon">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" class="sun-icon" style="display:none">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-        </button>
-        <button id="menu-toggle" class="btn icon-btn mobile-only" aria-expanded="false" aria-controls="mobile-nav">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
+    <header class="intro">
+      <div class="intro-text">
+        <h1>Hüseyin Umut Işık</h1>
+        <p class="tagline">CS @ METU · Research Intern @ Harvard Medical School</p>
+        <p class="links">
+          <a href="https://www.linkedin.com/in/h%C3%BCseyin-umut-i%C5%9F%C4%B1k-7b3ba4255/">LinkedIn</a> ·
+          <a href="https://github.com/HUmutI">GitHub</a>
+        </p>
       </div>
-    </div>
+      <img class="portrait" src="images/umut_first.jpeg" alt="Hüseyin Umut Işık" />
+    </header>
 
-    <!-- Mobile nav -->
-    <div id="mobile-nav" class="mobile-nav" hidden>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Awards & Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-left">
-          <div class="status-badge">
-            <span class="pulse-dot"></span> Focusing on Quantum Computing & Deep Learning
-          </div>
-          <h1 class="hero-title">Hüseyin Umut <br><span class="gradient-text">Işık</span></h1>
-          <p class="hero-sub">Computer Engineering Student at METU specializing in Quantum Computing, Deep Learning, and
-            AI. Building intelligent systems at the intersection of advanced research and robust engineering.</p>
-
-          <div class="cta-line">
-            <a class="btn primary" href="#projects">Explore My Work</a>
-            <a class="btn outline social-btn" href="https://github.com/HUmutI" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                </path>
-              </svg>
-              GitHub
-            </a>
-            <a class="btn outline social-btn"
-              href="https://www.linkedin.com/in/h%C3%BCseyin-umut-i%C5%9F%C4%B1k-7b3ba4255/" target="_blank"
-              rel="noopener">
-              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-              LinkedIn
-            </a>
-          </div>
-        </div>
-
-        <div class="hero-right">
-          <div class="profile-wrapper">
-            <div class="profile-glow"></div>
-            <div class="avatar-photo">
-              <img src="images/umut_first.jpeg" alt="Hüseyin Umut Işık profile photo">
-            </div>
-            <div class="floating-badge badge-1">Quantum AI</div>
-            <div class="floating-badge badge-2">Deep Learning</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container hero-stats-container">
-        <div class="stats-grid glass-card">
-          <div class="stat-item">
-            <span class="stat-value">5+</span>
-            <span class="stat-label">Global Hackathon Awards</span>
-          </div>
-          <div class="stat-item divider"></div>
-          <div class="stat-item">
-            <span class="stat-value">2026</span>
-            <span class="stat-label">EPFL Quantum 1st Place</span>
-          </div>
-          <div class="stat-item divider"></div>
-          <div class="stat-item">
-            <span class="stat-value">MIT</span>
-            <span class="stat-label">iQuHACK Honorable Mention</span>
-          </div>
-        </div>
-      </div>
+    <section>
+      <h2>About</h2>
+      <p>
+        I am currently a research intern at the <a
+          href="https://research.childrenshospital.org/research-units/computational-radiology-laboratory">Computational
+          Radiology Laboratory</a> at Boston Children's Hospital / Harvard Medical School, where I work on medical
+        image analysis. My research interests are in computer vision and deep learning, in particular monocular
+        depth estimation for lunar robotics and medical imaging.
+      </p>
+      <p>
+        On the side, quantum computing is a hobby I take seriously: my teams have won first place at the EPFL
+        Quantum Hackathon (Quandela Challenge) and IQM QuantumHACK Madrid, and received an honorable mention at MIT
+        iQuHACK.
+      </p>
     </section>
 
-    <section id="about" class="container section">
-      <div class="section-header">
-        <h2 class="section-title">About Me</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="about-content">
-        <div class="about-text glass-card">
-          <p>As a Computer Engineering student at METU, my passion lies at the bleeding edge of technology:
-            <strong>Quantum Computing and Deep Learning</strong>. I specialize in developing hybrid architectures that
-            merge high-performance computing with cutting-edge AI methodologies.
+    <section>
+      <h2>News</h2>
+      <ul class="news">
+        <li><span class="date">2026</span> <strong>LuMon</strong>, our benchmark for lunar monocular depth
+          estimation, was accepted to the <strong>CVPR 2026 AI4SPACE workshop</strong>.</li>
+        <li><span class="date">2026</span> Accepted to <strong>Y Combinator AI Startup School 2026</strong>.</li>
+        <li><span class="date">2026</span> Started as a research intern at the Computational Radiology Laboratory,
+          Boston Children's Hospital / Harvard Medical School.</li>
+        <li><span class="date">2026</span> 1st place at the EPFL Quantum Hackathon, Quandela Challenge.</li>
+        <li><span class="date">2026</span> Honorable mention at MIT iQuHACK (NVIDIA Challenge), among 1,400+
+          participants.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+      <ul class="cv">
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">LuMon: A Comprehensive Benchmark and Development Suite with Novel Datasets for
+              Lunar Monocular Depth Estimation</span>
+            <span class="date">2026</span>
+          </div>
+          <div class="cv-org">CVPR 2026, AI4SPACE Workshop</div>
+          <p>Aytaç Sekmen, Fatih Emre Güneş, Furkan Horoz, <strong>Hüseyin Umut Işık</strong>, Mehmet Alp Özaydın,
+            Onur Altay Topaloğlu, Şahin Umutcan Üstündaş, Yurdasen Alp Yeni, Halil Ersin Söken, Erol Şahin, Ramazan
+            Gökberk Cinbiş, Sinan Kalkan.
+            <a href="https://arxiv.org/abs/2604.09352">arXiv</a>
           </p>
-          <p>My recent focus has been on exploiting quantum-inspired algorithms and true quantum hardware to tackle
-            complex optimization and prediction problems—such as mapping non-linear market dynamics into purely Photonic
-            Quantum Reservoirs or addressing the structural complexities of the LABS problem. I thrive in highly
-            competitive environments, consistently bringing ideas from conceptual theory to award-winning execution
-            within 24-48 hours alongside elite global talent.</p>
-        </div>
-        <div class="about-highlights">
-          <div class="highlight-item">
-            <div class="highlight-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="4" y="4" width="16" height="16" rx="2"></rect>
-                <rect x="9" y="9" width="6" height="6"></rect>
-                <line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line>
-                <line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line>
-                <line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line>
-                <line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line>
-              </svg>
-            </div>
-            <div>
-              <h4 class="highlight-title">Deep Learning & AI</h4>
-              <p class="highlight-desc">Advanced model architectures, transfer learning, and generative AI integrations.
-              </p>
-            </div>
-          </div>
-          <div class="highlight-item">
-            <div class="highlight-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="1"></circle>
-                <ellipse cx="12" cy="12" rx="10" ry="4.5"></ellipse>
-                <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(60 12 12)"></ellipse>
-                <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(120 12 12)"></ellipse>
-              </svg>
-            </div>
-            <div>
-              <h4 class="highlight-title">Quantum Computing</h4>
-              <p class="highlight-desc">Photonic quantum reservoirs, VQC, and hybrid quantum-classical optimization.</p>
-            </div>
-          </div>
-          <div class="highlight-item">
-            <div class="highlight-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                <circle cx="12" cy="12" r="3"></circle>
-              </svg>
-            </div>
-            <div>
-              <h4 class="highlight-title">Robotics & Vision</h4>
-              <p class="highlight-desc">Event-based vision, depth estimation, and UAV autonomy at METU ROMER & ANZU.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
 
-    <section id="experience" class="container section">
-      <div class="section-header">
-        <h2 class="section-title">Research & Experience</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item glass-card">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2025 – Present</span>
-            <h3 class="timeline-role">Candidate Software Engineer</h3>
-            <h4 class="timeline-org">MKE</h4>
-            <p>Pioneering Augmented Reality implementations on Unmanned Ground Vehicles (UGVs) to enhance situational
-              awareness and operational capabilities.</p>
+    <section>
+      <h2>Experience</h2>
+      <ul class="cv">
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">Research Intern, Computational Radiology Laboratory</span>
+            <span class="date">2026 – present</span>
           </div>
-        </div>
-
-        <div class="timeline-item glass-card">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2024 – Present</span>
-            <h3 class="timeline-role">Undergraduate Researcher</h3>
-            <h4 class="timeline-org">METU ROMER</h4>
-            <p>Conducting advanced research on Event-Based Vision and Monocular Depth Estimation. Developing simulation
-              environments for complex robotic perception scenarios including lunar applications.</p>
+          <div class="cv-org">Harvard Medical School / Boston Children's Hospital</div>
+          <p>Medical image analysis research.</p>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">Candidate Software Engineer</span>
+            <span class="date">2025 – present</span>
           </div>
-        </div>
-
-        <div class="timeline-item glass-card">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2024 – Present</span>
-            <h3 class="timeline-role">Software Team Member</h3>
-            <h4 class="timeline-org">METU ANZU UAV</h4>
-            <p>Engineering autonomous UAV systems encompassing complex path planning, real-time object detection, and
-              robust tracking algorithms.</p>
+          <div class="cv-org">MKE</div>
+          <p>Augmented reality for unmanned ground vehicles (UGVs) to improve situational awareness.</p>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">Undergraduate Researcher</span>
+            <span class="date">2024 – present</span>
           </div>
-        </div>
-
-        <div class="timeline-item glass-card">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2025</span>
-            <h3 class="timeline-role">R&D Intern</h3>
-            <h4 class="timeline-org">HIDROAN</h4>
-            <p>Focused on AI model optimization. Deployed RFDETR object detection models utilizing TensorRT, ONNX, and
-              PyTorch for highly efficient embedded edge deployment.</p>
+          <div class="cv-org">METU ROMER</div>
+          <p>Event-based vision and monocular depth estimation; simulation environments for robotic perception,
+            including lunar applications.</p>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">Software Team Member</span>
+            <span class="date">2024 – present</span>
           </div>
-        </div>
-      </div>
+          <div class="cv-org">METU ANZU UAV</div>
+          <p>Autonomous UAV systems: path planning, real-time object detection, and tracking.</p>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">R&amp;D Intern</span>
+            <span class="date">2025</span>
+          </div>
+          <div class="cv-org">HIDROAN</div>
+          <p>AI model optimization: RF-DETR object detection deployed with TensorRT, ONNX, and PyTorch on embedded
+            edge hardware.</p>
+        </li>
+      </ul>
     </section>
 
-    <section id="projects" class="container section">
-      <div class="section-header">
-        <h2 class="section-title">Awards & Featured Projects</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="featured-projects">
-        <!-- EPFL 2026 -->
-        <div class="project-featured glass-card highlight-card">
-          <div class="project-award-badge gold">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
-            1st Place Global
+    <section>
+      <h2>Selected Awards &amp; Projects</h2>
+      <ul class="cv">
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">EPFL Quantum Hackathon, 1st place, Quandela Challenge</span>
+            <span class="date">2026</span>
           </div>
-          <div class="project-content">
-            <h3>EPFL Quantum Hackathon 2026 <span class="tag">Quandela Challenge</span></h3>
-            <p class="project-team"><strong>Team Qedi</strong>: Eren Aslan, Arda Kara, Mehmet Alp Özaydın, H. Umut Işık
-            </p>
-            <p class="project-desc">Tackled the highly competitive Quandela Challenge with our project, <strong>"Hybrid
-                Photonic Temporal QRC (HPT-QRC)"</strong>. We mapped non-linear market dynamics directly into a purely
-              Photonic Quantum Reservoir powered by MerLin to forecast Swaption Volatility Surfaces.</p>
-            <p class="project-impact">Successfully outperformed classical deep learning baselines (like LSTM) by
-              physically simulating temporal memory with significantly fewer parameters.</p>
-            <div class="project-links">
-              <a href="https://lnkd.in/dhS425hH" target="_blank" rel="noopener" class="btn outline small">View Code</a>
-              <a href="https://lnkd.in/dPZhyzq8" target="_blank" rel="noopener" class="btn outline small">Live
-                Project</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- MIT iQuHACK 2026 -->
-        <div class="project-featured glass-card highlight-card">
-          <div class="project-award-badge silver">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
-            Honorable Mention
-          </div>
-          <div class="project-content">
-            <h3>MIT iQuHACK 2026 <span class="tag">NVIDIA Challenge</span></h3>
-            <p class="project-team"><strong>Team QAT</strong>: Hatice Boyar, Eren Aslan, İlayda Dilek, Jen-Yu Chang
-              (Leo), H. Umut Işık</p>
-            <p class="project-desc">Competed among 1,400+ participants globally. Our project, <strong>"Hybrid GQE-MTS
-                and Transfer Learning for LABS Problem"</strong>, addressed the Low Autocorrelation Binary Sequences
-              (LABS) challenge.</p>
-            <p class="project-impact">Developed a hybrid architecture integrating Generative AI with High-Performance
-              Computing (HPC) to massively accelerate complex optimization tasks.</p>
-            <div class="project-links">
-              <a href="https://lnkd.in/dVknEVXT" target="_blank" rel="noopener" class="btn outline small">View Code</a>
-              <a href="https://lnkd.in/dcc27SQM" target="_blank" rel="noopener" class="btn outline small">Live
-                Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="projects-grid mt-8">
-        <div class="project-card glass-card">
-          <div class="card-header">
-            <span class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="1"></circle><ellipse cx="12" cy="12" rx="10" ry="4.5"></ellipse><ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(60 12 12)"></ellipse><ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(120 12 12)"></ellipse></svg>
-            </span>
-            <span class="card-award">1st Place</span>
-          </div>
-          <h4>IQM QuantumHACK <br><span class="text-sm fw-normal muted">Banco Santander Challenge</span></h4>
-          <p>Developed a VQC model for risky investments utilizing true IQM Quantum Computers during a 24-hour hackathon
-            in Madrid, Spain.</p>
-        </div>
-
-        <div class="project-card glass-card">
-          <div class="card-header">
-            <span class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2"></path><path d="M17 3h2a2 2 0 0 1 2 2v2"></path><path d="M21 17v2a2 2 0 0 1-2 2h-2"></path><path d="M7 21H5a2 2 0 0 1-2-2v-2"></path><circle cx="12" cy="12" r="3"></circle></svg>
-            </span>
-            <span class="card-award">1st Place</span>
-          </div>
-          <h4>TEKNOFEST <br><span class="text-sm fw-normal muted">Quantum Technologies</span></h4>
-          <p>Applied QNNs for low-quality face recognition in a rigorous 30-hour hackathon in Istanbul.</p>
-        </div>
-
-        <div class="project-card glass-card">
-          <div class="card-header">
-            <span class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-            </span>
-            <span class="card-award">1st Place (Reg.)</span>
-          </div>
-          <h4>TÜBİTAK 2204-A <br><span class="text-sm fw-normal muted">Cryptography</span></h4>
-          <p>First place in the Izmir Regional finals for an advanced cryptography algorithms and mathematics project.
+          <p>Hybrid Photonic Temporal QRC: mapped non-linear market dynamics into a photonic quantum reservoir
+            (MerLin) to forecast swaption volatility surfaces. It beat LSTM baselines with fewer parameters.
+            Team Qedi: Eren Aslan, Arda Kara, Mehmet Alp Özaydın, H. Umut Işık.
+            <a href="https://lnkd.in/dhS425hH">code</a> · <a href="https://lnkd.in/dPZhyzq8">project</a>
           </p>
-        </div>
-
-        <div class="project-card glass-card">
-          <div class="card-header">
-            <span class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-            </span>
-            <span class="card-award">2nd Place</span>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">MIT iQuHACK, Honorable mention, NVIDIA Challenge</span>
+            <span class="date">2026</span>
           </div>
-          <h4>METU-DTX Hackathon</h4>
-          <p>Built a robust industrial defect classification model from scratch in just 6 hours.</p>
-        </div>
-
-        <div class="project-card glass-card">
-          <div class="card-header">
-            <span class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-            </span>
-            <span class="card-award">2nd Place</span>
-          </div>
-          <h4>BTK Academy CTF</h4>
-          <p>Secured 2nd place in a 4-day intensive CTF camp focusing on Web-App security and kernel vulnerabilities.
+          <p>Hybrid GQE-MTS with transfer learning for the Low Autocorrelation Binary Sequences (LABS) problem.
+            The approach combines generative models with HPC. Team QAT: Hatice Boyar, Eren Aslan, İlayda Dilek,
+            Jen-Yu Chang (Leo), H. Umut Işık.
+            <a href="https://lnkd.in/dVknEVXT">code</a> · <a href="https://lnkd.in/dcc27SQM">project</a>
           </p>
-        </div>
-      </div>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">Y Combinator AI Startup School, Accepted participant</span>
+            <span class="date">2026</span>
+          </div>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">IQM QuantumHACK, Madrid, 1st place, Banco Santander Challenge</span>
+          </div>
+          <p>Variational quantum classifier for risky investments, run on IQM quantum hardware in a 24-hour
+            hackathon.</p>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">TEKNOFEST Quantum Technologies, 1st place</span>
+          </div>
+          <p>Quantum neural networks for low-quality face recognition, 30-hour hackathon in Istanbul.</p>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">TÜBİTAK 2204-A, 1st place, Izmir regional finals</span>
+          </div>
+          <p>Cryptography algorithms and mathematics project.</p>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">METU-DTX Hackathon, 2nd place</span>
+          </div>
+          <p>Industrial defect classification model built from scratch in 6 hours.</p>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">BTK Academy CTF, 2nd place</span>
+          </div>
+          <p>4-day CTF camp on web application security and kernel vulnerabilities.</p>
+        </li>
+      </ul>
     </section>
 
-    <section id="hobbies" class="container section">
-      <div class="section-header">
-        <h2 class="section-title">Beyond the Screen</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="hobbies-grid">
-        <div class="hobby-card glass-card">🎨 Drawing </div>
-        <div class="hobby-card glass-card">🏀 Basketball </div>
-        <div class="hobby-card glass-card">🧩 Rubik’s Cubes</div>
-        <div class="hobby-card glass-card">🏃 Running </div>
-      </div>
+    <section>
+      <h2>Miscellaneous</h2>
+      <p>Outside of work I draw, play football, solve Rubik's cubes, and run. My current goal is to finish an
+        Ironman.</p>
     </section>
 
-    <section id="contact" class="container section">
-      <div class="cta-box glass-card">
-        <h2>Let's build the future.</h2>
-        <p>I am always open to discussing cutting-edge research, collaborating on hackathons, or exploring deep tech
-          opportunities in Quantum AI.</p>
-        <div class="contact-actions">
-          <a class="btn primary large" href="https://www.linkedin.com/in/h%C3%BCseyin-umut-i%C5%9F%C4%B1k-7b3ba4255/"
-            target="_blank" rel="noopener">Connect on LinkedIn</a>
-          <a class="btn outline large" href="https://github.com/HUmutI" target="_blank" rel="noopener">Explore my
-            GitHub</a>
-        </div>
-      </div>
-    </section>
+    <footer>
+      <p>© 2026 Hüseyin Umut Işık <a href="#" id="door" class="door" aria-label="?">✦</a></p>
+    </footer>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">H. Umut Işık</div>
-      <p class="footer-copy">© 2026 Exploring the intersection of Intelligence and Quantum Mechanics.</p>
-      <div class="footer-links">
-        <a href="#top">Back to top ↑</a>
-      </div>
-    </div>
-  </footer>
-
   <script src="script.js"></script>
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </body>
 
 </html>

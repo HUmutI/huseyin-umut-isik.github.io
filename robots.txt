@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: nothin
 
+# WHY ARE YOU HERE
 # are you a robot? then why are you here!!!
 # looks like this website is created by AI, right? well yes:d
