@@ -85,6 +85,31 @@
   start();
 })();
 
+// Highlight the nav link of the section currently in view.
+(function () {
+  const links = document.querySelectorAll('.topnav a[href^="#"]');
+  if (!links.length) return;
+  const sections = Array.from(links)
+    .map(a => document.getElementById(a.getAttribute('href').slice(1)))
+    .filter(Boolean);
+
+  function update() {
+    const mark = window.scrollY + window.innerHeight * 0.25;
+    let current = null;
+    for (const s of sections) {
+      if (s.offsetTop <= mark) current = s.id;
+    }
+    if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 2) {
+      current = sections[sections.length - 1].id;
+    }
+    links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+  }
+
+  document.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();
+
 // ---------------------------------------------------------------------------
 (function () {
   console.log(
