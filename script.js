@@ -85,6 +85,21 @@
   start();
 })();
 
+// Expand/collapse the older news entries.
+(function () {
+  const btn = document.querySelector('.news-toggle');
+  const list = document.getElementById('news-list');
+  if (!btn || !list) return;
+
+  const labels = { collapsed: 'Show earlier news', expanded: 'Show fewer' };
+
+  btn.addEventListener('click', () => {
+    const open = list.classList.toggle('expanded');
+    btn.setAttribute('aria-expanded', String(open));
+    btn.textContent = open ? labels.expanded : labels.collapsed;
+  });
+})();
+
 // Highlight the nav link of the section currently in view.
 (function () {
   const links = document.querySelectorAll('.topnav a[href^="#"]');
