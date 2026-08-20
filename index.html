@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="style.css" />
 
   <meta name="description"
-    content="Hüseyin Umut Işık, CS student at METU and research intern at the Computational Radiology Laboratory, Boston Children's Hospital / Harvard Medical School. Computer vision and deep learning." />
+    content="Hüseyin Umut Işık, CS student at METU and research intern at the QUIN research group, Boston Children's Hospital / Harvard Medical School. Computer vision and deep learning." />
 </head>
 
 <body>
@@ -30,6 +30,7 @@
       <a href="#news">News</a>
       <a href="#publications">Publications</a>
       <a href="#experience">Experience</a>
+      <a href="#programs">Programs</a>
       <a href="#awards">Awards</a>
     </nav>
 
@@ -48,9 +49,8 @@
     <section id="about">
       <h2>About</h2>
       <p>
-        I am currently a research intern at the <a
-          href="https://research.childrenshospital.org/research-units/computational-radiology-laboratory">Computational
-          Radiology Laboratory</a> at Boston Children's Hospital / Harvard Medical School, where I work on medical
+        I am currently a research intern at the <a href="https://labs.childrenshospital.org/quin">Quantitative Intelligent Medical Imaging
+          (QUIN)</a> research group at Boston Children's Hospital / Harvard Medical School, where I work on medical
         image analysis. My research interests are in computer vision and deep learning, in particular monocular
         depth estimation for lunar robotics and medical imaging.
       </p>
@@ -63,21 +63,42 @@
 
     <section id="news">
       <h2>News</h2>
-      <ul class="news">
+      <ul class="news" id="news-list">
+        <li><span class="date">2026</span> <strong>ARC-CT</strong>, our region-aware vision-language model for 3D
+          chest CT, was accepted to the <strong>MICCAI 2026 TIA workshop</strong>.</li>
+        <li><span class="date">2026</span> Selected for the venture track of <strong>Hack-Nation Venture
+            Lab</strong> (Cohort 3).</li>
+        <li><span class="date">2026</span> 3rd place at the <strong>Hack-Nation Global AI Hackathon</strong>
+          (Genome Firewall Challenge), among 2,000+ participants.</li>
+        <li><span class="date">2026</span> Selected for <strong>Y Combinator Startup School 2026</strong> in San
+          Francisco.</li>
         <li><span class="date">2026</span> <strong>LuMon</strong>, our benchmark for lunar monocular depth
           estimation, was accepted to the <strong>CVPR 2026 AI4SPACE workshop</strong>.</li>
-        <li><span class="date">2026</span> Accepted to <strong>Y Combinator AI Startup School 2026</strong>.</li>
-        <li><span class="date">2026</span> Started as a research intern at the Computational Radiology Laboratory,
-          Boston Children's Hospital / Harvard Medical School.</li>
-        <li><span class="date">2026</span> 1st place at the EPFL Quantum Hackathon, Quandela Challenge.</li>
-        <li><span class="date">2026</span> Honorable mention at MIT iQuHACK (NVIDIA Challenge), among 1,400+
-          participants.</li>
+        <li class="news-old"><span class="date">2026</span> Started as a research intern at the QUIN research
+          group, Boston Children's Hospital / Harvard Medical School.</li>
+        <li class="news-old"><span class="date">2026</span> 1st place at the EPFL Quantum Hackathon, Quandela
+          Challenge.</li>
+        <li class="news-old"><span class="date">2026</span> Honorable mention at MIT iQuHACK (NVIDIA Challenge),
+          among 1,400+ participants.</li>
       </ul>
+      <button type="button" class="news-toggle" aria-expanded="false" aria-controls="news-list">Show earlier
+        news</button>
     </section>
 
     <section id="publications">
       <h2>Publications</h2>
       <ul class="cv">
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">ARC-CT: Anatomy-Routed Contrastive Vision-Language Learning for 3D Chest
+              CT</span>
+            <span class="date">2026</span>
+          </div>
+          <div class="cv-org">MICCAI 2026, TIA Workshop</div>
+          <p><strong>Hüseyin Umut Işık</strong>, Mehmet Alp Özaydın, Sıla Kurugöl, Şeyda Ertekin.</p>
+          <p>A region-aware vision-language model for 3D chest CT: anatomy-routed contrastive learning aligns
+            volumetric scans with radiology reports for region-level reasoning.</p>
+        </li>
         <li>
           <div class="cv-head">
             <span class="cv-role">LuMon: A Comprehensive Benchmark and Development Suite with Novel Datasets for
@@ -99,7 +120,7 @@
       <ul class="cv">
         <li>
           <div class="cv-head">
-            <span class="cv-role">Research Intern, Computational Radiology Laboratory</span>
+            <span class="cv-role">Research Intern, QUIN Research Group</span>
             <span class="date">2026 – present</span>
           </div>
           <div class="cv-org">Harvard Medical School / Boston Children's Hospital</div>
@@ -107,11 +128,11 @@
         </li>
         <li>
           <div class="cv-head">
-            <span class="cv-role">Candidate Software Engineer</span>
+            <span class="cv-role">Computer Vision Candidate Engineer</span>
             <span class="date">2025 – 2026</span>
           </div>
-          <div class="cv-org">MKE</div>
-          <p>Augmented reality for unmanned ground vehicles (UGVs) to improve situational awareness.</p>
+          <div class="cv-org">MKE – Makine ve Kimya Endüstrisi</div>
+          <p>Object detection, tracking, and mapping for unmanned ground vehicles (UGVs).</p>
         </li>
         <li>
           <div class="cv-head">
@@ -142,9 +163,53 @@
       </ul>
     </section>
 
+    <section id="programs">
+      <h2>Programs</h2>
+      <ul class="cv">
+        <li>
+          <div class="cv-head">
+            <span class="cv-role"><a href="https://events.ycombinator.com/startup-school-2026">Y Combinator Startup
+                School 2026</a></span>
+            <span class="date">Jul 2026</span>
+          </div>
+          <div class="cv-org">San Francisco, CA</div>
+          <p>Selected from 30,000+ applicants for a hand-picked group of founders and technical builders; two days
+            of sessions with Jensen Huang, Sam Altman, Alexandr Wang and more.</p>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role"><a href="https://ventures.hack-nation.ai">Hack-Nation Venture Lab</a>, Cohort
+              3</span>
+            <span class="date">2026</span>
+          </div>
+          <div class="cv-org">Remote</div>
+          <p>Selected for the venture track on the strength of a 3rd place finish at the Hack-Nation Global AI
+            Hackathon, an MIT-born founder program.</p>
+        </li>
+      </ul>
+    </section>
+
     <section id="awards">
       <h2>Selected Awards &amp; Projects</h2>
       <ul class="cv">
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">Hack-Nation Global AI Hackathon, 3rd place, Genome Firewall Challenge</span>
+            <span class="date">2026</span>
+          </div>
+          <p>Gatcha: a model predicting target antibiotics directly from bacterial genome sequences, built in
+            team Qedi among 2,000+ participants.
+            <a href="https://github.com/jabnow/gatcha-genome/">code</a> ·
+            <a href="https://gatcha-genome.vercel.app/">project</a>
+          </p>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">CENG488 Guided Research Symposium, 1st place</span>
+            <span class="date">2026</span>
+          </div>
+          <p>Ranked 1st among 29 projects for Region-Aware CLIP for Chest CT, the work that became ARC-CT.</p>
+        </li>
         <li>
           <div class="cv-head">
             <span class="cv-role">EPFL Quantum Hackathon, 1st place, Quandela Challenge</span>
@@ -166,12 +231,6 @@
             Jen-Yu Chang (Leo), H. Umut Işık.
             <a href="https://lnkd.in/dVknEVXT">code</a> · <a href="https://lnkd.in/dcc27SQM">project</a>
           </p>
-        </li>
-        <li>
-          <div class="cv-head">
-            <span class="cv-role">Y Combinator AI Startup School, Accepted participant</span>
-            <span class="date">2026</span>
-          </div>
         </li>
         <li>
           <div class="cv-head">
