@@ -23,6 +23,71 @@
 
 <body>
   <canvas id="bg" aria-hidden="true"></canvas>
+
+  <svg class="deco deco-left" viewBox="0 0 300 900" aria-hidden="true">
+    <!-- ringed planet -->
+    <g transform="rotate(-18 150 190)">
+      <ellipse cx="150" cy="190" rx="92" ry="22" />
+      <ellipse cx="150" cy="190" rx="74" ry="15" />
+      <circle class="solid" cx="150" cy="190" r="46" />
+      <path d="M112 172 Q150 184 188 172" />
+      <path d="M108 200 Q150 214 192 200" />
+      <path d="M58 190 A92 22 0 0 0 242 190" />
+      <path d="M76 190 A74 15 0 0 0 224 190" />
+    </g>
+    <path class="spark acc" d="M238 82 L241 92 L251 95 L241 98 L238 108 L235 98 L225 95 L235 92 Z" />
+    <circle class="dot" cx="52" cy="96" r="2" />
+    <circle class="dot" cx="262" cy="292" r="1.6" />
+    <!-- moon on a dashed orbit -->
+    <path class="dash" d="M20 470 Q150 380 280 450" />
+    <circle class="solid" cx="92" cy="428" r="15" />
+    <circle cx="87" cy="424" r="3.5" />
+    <circle cx="97" cy="433" r="2.2" />
+    <!-- constellation -->
+    <path d="M70 610 L128 580 L186 604 L232 566 M186 604 L204 662 L150 690" />
+    <circle class="dot" cx="70" cy="610" r="3" />
+    <circle class="dot" cx="128" cy="580" r="2.4" />
+    <circle class="dot acc" cx="186" cy="604" r="3.4" />
+    <circle class="dot" cx="232" cy="566" r="2.4" />
+    <circle class="dot" cx="204" cy="662" r="2.4" />
+    <circle class="dot" cx="150" cy="690" r="3" />
+    <!-- small planet -->
+    <circle class="solid" cx="196" cy="800" r="26" />
+    <path d="M172 790 Q196 800 220 790" />
+    <path d="M172 808 Q196 818 220 808" />
+    <path class="spark" d="M82 792 L84 799 L91 801 L84 803 L82 810 L80 803 L73 801 L80 799 Z" />
+  </svg>
+
+  <svg class="deco deco-right" viewBox="0 0 300 900" aria-hidden="true">
+    <!-- black hole -->
+    <g transform="rotate(10 150 220)">
+      <ellipse cx="150" cy="220" rx="112" ry="20" />
+      <ellipse cx="150" cy="220" rx="88" ry="13" />
+      <path class="solid" d="M96 220 A54 54 0 0 1 204 220 Z" />
+      <path d="M104 220 A46 46 0 0 1 196 220" />
+      <circle class="solid acc" cx="150" cy="220" r="34" />
+      <circle class="hole" cx="150" cy="220" r="28" />
+      <path d="M38 220 A112 20 0 0 0 262 220" />
+      <path d="M62 220 A88 13 0 0 0 238 220" />
+    </g>
+    <circle class="dot" cx="48" cy="92" r="1.8" />
+    <path class="spark" d="M250 356 L252 363 L259 365 L252 367 L250 374 L248 367 L241 365 L248 363 Z" />
+    <!-- small orbit system -->
+    <g transform="rotate(-14 150 540)">
+      <ellipse class="dash" cx="150" cy="540" rx="104" ry="40" />
+      <ellipse cx="150" cy="540" rx="70" ry="26" />
+      <ellipse cx="150" cy="540" rx="38" ry="13" />
+      <circle class="dot acc" cx="150" cy="540" r="8" />
+      <circle class="dot" cx="188" cy="540" r="3" />
+      <circle class="dot" cx="96" cy="523" r="4" />
+      <circle class="solid" cx="236" cy="562" r="7" />
+    </g>
+    <!-- comet -->
+    <circle class="solid" cx="84" cy="770" r="9" />
+    <path d="M92 764 L176 716 M94 772 L196 742 M90 779 L170 772" />
+    <circle class="dot" cx="232" cy="820" r="2" />
+    <path class="spark acc" d="M222 668 L225 677 L234 680 L225 683 L222 692 L219 683 L210 680 L219 677 Z" />
+  </svg>
   <main class="page">
 
     <nav class="topnav" aria-label="Sections">
@@ -452,8 +517,7 @@
 
     <section>
       <h2>Miscellaneous</h2>
-      <p>Outside of work I draw, play football, solve Rubik's cubes, and run. My current goal is to finish an
-        Ironman.</p>
+      <p>Outside of work I draw, play football, solve Rubik's cubes, and run.</p>
     </section>
 
     <footer>

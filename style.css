@@ -44,6 +44,64 @@ body {
   pointer-events: none;
 }
 
+/* Line-art space decorations in the side gutters, wide screens only */
+.deco {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: min(380px, calc((100vw - 720px) / 2));
+  z-index: -1;
+  pointer-events: none;
+  color: var(--muted);
+  opacity: 0.38;
+}
+
+.deco-left {
+  left: max(0px, calc(50% - 360px - 380px));
+}
+
+.deco-right {
+  right: max(0px, calc(50% - 360px - 380px));
+}
+
+.deco * {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.deco .solid {
+  fill: var(--bg);
+}
+
+.deco .hole {
+  fill: #0a0a0a;
+  stroke: none;
+}
+
+.deco .dot {
+  fill: currentColor;
+  stroke: none;
+}
+
+.deco .dash {
+  stroke-dasharray: 3 6;
+}
+
+.deco .acc {
+  color: var(--accent);
+}
+
+@media (min-width: 1180px) {
+  .deco {
+    display: block;
+  }
+}
+
 .page {
   position: relative;
 }
