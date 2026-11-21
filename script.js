@@ -100,6 +100,35 @@
   });
 })();
 
+// Give each section with collapsible entries an "Expand all" button.
+(function () {
+  document.querySelectorAll('section').forEach((section) => {
+    const items = Array.from(section.querySelectorAll('details'));
+    const heading = section.querySelector('h2');
+    if (!items.length || !heading) return;
+
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'expand-all';
+
+    function sync() {
+      const allOpen = items.every(d => d.open);
+      btn.textContent = allOpen ? 'Collapse all' : 'Expand all';
+      btn.setAttribute('aria-expanded', String(allOpen));
+    }
+
+    btn.addEventListener('click', () => {
+      const open = !items.every(d => d.open);
+      items.forEach(d => { d.open = open; });
+      sync();
+    });
+    items.forEach(d => d.addEventListener('toggle', sync));
+
+    heading.after(btn);
+    sync();
+  });
+})();
+
 // Highlight the nav link of the section currently in view.
 (function () {
   const links = document.querySelectorAll('.topnav a[href^="#"]');

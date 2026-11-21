@@ -215,7 +215,86 @@ p {
 }
 
 .cv li {
-  margin-bottom: 1.3rem;
+  margin-bottom: 0.85rem;
+}
+
+/* Each entry shows its headline; the details open on click */
+.cv summary {
+  position: relative;
+  padding-left: 1.2rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.cv summary::-webkit-details-marker {
+  display: none;
+}
+
+.cv summary::before {
+  content: '+';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.8rem;
+  text-align: center;
+  color: var(--accent);
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+}
+
+.cv details[open] > summary::before {
+  content: '\2212';
+}
+
+.cv summary:hover .cv-role {
+  color: var(--accent);
+}
+
+.cv summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.cv .more {
+  padding-left: 1.2rem;
+  color: var(--text);
+  animation: reveal 0.2s ease-out;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cv .more {
+    animation: none;
+  }
+}
+
+/* Section-level expand/collapse, added by script.js */
+section {
+  position: relative;
+}
+
+.expand-all {
+  position: absolute;
+  top: 0.3rem;
+  right: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 0.8rem;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.expand-all:hover {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 .cv-head {
